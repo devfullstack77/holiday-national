@@ -15,7 +15,7 @@ Obter os principais feriados nacionais tendo como retorno um objeto json.
 - [Node.js](https://nodejs.org/en/) Version >= v14.19.1
 - [NVM] Node Version Manager
 - [Nodemon](https://www.npmjs.com/package/nodemon)
-- [nager.date](https://date.nager.at)
+- [nager.date](https://github.com/nager/Nager.Date)
 
 
 ## Recomendado
