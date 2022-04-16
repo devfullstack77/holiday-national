@@ -1,0 +1,20 @@
+{
+  "name": "holiday-national",
+  "version": "1.0.0",
+  "description": "API- Listar os Feriados Nacionais e ajudar identificar o dia útil.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./index.js api",
+    "start-w": "nodemon ./index.js api",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "eslint": "^8.13.0",
+    "node-fetch": "^3.2.3"
+  }
+}
