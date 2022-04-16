@@ -12,9 +12,10 @@ Obter os principais feriados nacionais tendo como retorno um objeto json.
 
 ## 🚀 Tecnologias utilizadas
 
-- [Node.js](https://nodejs.org/en/) Version >= 14
+- [Node.js](https://nodejs.org/en/) Version >= v14.19.1
 - [NVM] Node Version Manager
 - [Nodemon](https://www.npmjs.com/package/nodemon)
+- [nager.date](https://date.nager.at)
 
 
 ## Recomendado
@@ -81,7 +82,7 @@ Resultado:
 }
 ```
 
-#### Listar os todos feriados no ano.
+#### Listar todos os feriados no ano.
 
 ```bash
   http://localhost:5000/api/v1/national-holidays?year=2022&country=BR
@@ -115,9 +116,10 @@ Resultado: Identificando o feriado.
 
 {
     "data": {
-        "isBusinessDay": false,        // Informa se o dia é util. No exemplo é um dia de semana mas tem feriado.
+        "isBusinessDay": false,   //Informa se é dia util.
+                                  //No exemplo é um dia de semana mas tem feriado.
         "dayOfWeekName": "friday",
-        "national_Holiday": [         // Existindo o feriado carrega os dados
+        "national_Holiday": [     // Carregando as informações do feriado
             {
                 "date": "2022-04-15",
                 "localName": "Sexta feira Santa",
@@ -134,10 +136,10 @@ Resultado: Identificando o feriado.
 }
 ```
 
-Resultado: Não tem feriado.
 ```bash
   http://localhost:5000/api/v1/business-day?date=2022-04-11&country=BR
 ```
+Resultado: Não tem feriado.
 ```bash
 {
     "data": {
